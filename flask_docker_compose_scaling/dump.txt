@@ -1,0 +1,5 @@
+== Info: About to connect() to 127.0.0.1 port 80 (#0)
+== Info:   Trying 127.0.0.1...
+== Info: 連線被拒絕
+== Info: Failed connect to 127.0.0.1:80; 連線被拒絕
+== Info: Closing connection 0

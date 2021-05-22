@@ -2,28 +2,30 @@ version: "2"
 services:
   web:
     build: .
-    ports:
-      - "8080"
+    ports: 
+      - 8080
     links:
       - redis
     networks:
-      - "compose-demo"
+      - compose-demo
 
   redis:
     image: redis
-    ports:
-      - "6379"
+    ports: 
+      - 6379
     networks:
-      - "compose-demo"
+      - compose-demo
 
-  # lb:
-  #   image: dockercloud/haproxy
-  #   ports:
-  #     - "80:80"
-  #   networks:
-  #     - "compose-demo"
-  #   volumes:
-  #     - /var/run/docker.sock:/var/run/docker.sock
+  lb:
+    image: dockercloud/haproxy:latest
+    ports:
+      - 80:80
+    links:
+      - web
+    networks:
+      - compose-demo
+    volumes:
+     - /var/run/docker.sock:/var/run/docker.sock
 
 networks:
   compose-demo:
