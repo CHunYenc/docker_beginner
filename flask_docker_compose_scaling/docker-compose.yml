@@ -2,7 +2,7 @@ version: "2"
 services:
   web:
     build: .
-    ports: 
+    ports:
       - 8080
     links:
       - redis
@@ -11,7 +11,7 @@ services:
 
   redis:
     image: redis
-    ports: 
+    ports:
       - 6379
     networks:
       - compose-demo
@@ -25,7 +25,7 @@ services:
     networks:
       - compose-demo
     volumes:
-     - /var/run/docker.sock:/var/run/docker.sock
+      - /var/run/docker.sock:/var/run/docker.sock
 
 networks:
   compose-demo:
