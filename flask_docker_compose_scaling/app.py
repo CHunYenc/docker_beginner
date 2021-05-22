@@ -10,7 +10,7 @@ redis = Redis(host="redis", port=6379)
 @app.route("/")
 def index():
     redis.incr("hits")
-    return f'Hello Container World! I have been {redis.get("hits")} times and my hostname is {socket.gethostname()}'
+    return f'Hello Container World! I have been {redis.get("hits")} times and my hostname is {socket.gethostname()}\n'
 
 
 if __name__ == "__main__":
