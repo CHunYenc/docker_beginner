@@ -17,4 +17,4 @@ services:
       - "compose-demo"
 
 networks:
-  compose-demo:
+  - compose-demo
