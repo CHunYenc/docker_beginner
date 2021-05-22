@@ -9,9 +9,6 @@
 
 1. docker images == docker image ls
 2. docker run `-d` `--name` redis redis (`-d 背景執行 --name dockername`)
-3. docker-compose up ```默認當前位置的 dock-compose.yaml```
-4. docker-compose up -d ```-d 可以讓 docker 背景執行```
-5. docker-compose -f composefile.yaml up ```-f 可以指定其他檔案```
 
 ## Linux 小技巧
 
