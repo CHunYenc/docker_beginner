@@ -1,0 +1,20 @@
+version: "2"
+services:
+  web:
+    build: .
+    ports:
+      - "80:5000"
+    links:
+      - redis
+    networks:
+      - "compose-demo"
+
+  redis:
+    image: redis
+    ports:
+      - "6379"
+    networks:
+      - "compose-demo"
+
+networks:
+  - compose-demo
