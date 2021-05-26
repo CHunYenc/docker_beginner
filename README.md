@@ -25,7 +25,8 @@ scaling 相關資料夾 `./docker_beginner/flask_docker_compose_scaling`
 
 1. docker-compose up
 2. docker-compose scale web=3 `services=num 因為範例 docker-compose.yml's services 叫 web 是我們要啟動的, 一次啟動三個.`
-3. docker-compose ps
+3. docker-compose up --scale web=3
+4. docker-compose ps
 
 ## Linux 小技巧
 
