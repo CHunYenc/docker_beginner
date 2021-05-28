@@ -1,9 +1,17 @@
 # docker_beginner
 
-1. git clone project
+1. git clone --recursive git@github.com:CHunYenc/docker_beginner.git
 2. cd flask_hello_docker
 3. python3 -m venv venv
 4. source venv/bin/activate
+
+## 學習順序
+
+1. flask_hello_docker/
+2. flask_redis/
+3. flask_docker_compose/
+4. flask_docker_compose_scaling/
+5. voting_app/
 
 ## docker 小撇步
 

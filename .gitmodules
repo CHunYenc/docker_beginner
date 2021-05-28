@@ -1,0 +1,3 @@
+[submodule "voting_app"]
+	path = voting_app
+	url = https://github.com/udemy-course/example-voting-app.git
